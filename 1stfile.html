@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web form</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 10px 350px;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .container
+        {
+            background-color: rgb(228, 225, 225);
+            padding:15px 15px 15px 25px;
+            border: 1px solid rgb(228, 225, 225);
+            border-radius: 4px;
+           
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea
+        {
+         width: 100%;
+         padding:5px;
+         margin:5px;
+        }
+        .main_heading
+        {
+            background-color:rgb(165, 216, 165);
+            padding:15px 15px 15px 25px;
+            border: 1px solid rgb(228, 225, 225);
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body> 
+    <div class="main_heading">
+    <h1>Contact form</h1>
+    Please fill all the texts in the fields
+    </div>
+    <div class="container">
+      Your Name:
+    <input placeholder ="Your full name" type="text" name="name" id="name">
+    <p></p>
+      Your email:
+    <input placeholder="Valid email address" type="email" name="email" id="email">
+    <p></p>
+      Message:
+    <textarea placeholder="Your message to us"  col="30" rows="5"></textarea>
+    <p></p>
+      Subject:
+    <input placeholder="job inquiry" type="text" name="job inquiry" id="job inquiry">
+    <p></p>
+    <input type="submit" value="send" id="send"> 
+</div>
+</body>
+</html>
